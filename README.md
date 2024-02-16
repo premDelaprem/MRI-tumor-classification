@@ -10,8 +10,8 @@ The data has been put together by a Kaggle user and it originally comes from 3 s
 All images vary in size and hue. MRI images are typically taken with or without contrast, so some images are extremely dark and others are brighter. Additionally, some of the images are in grayscale formatting, while others are in RGB. These issues are addressed and accounted for during the preprocessing stage in Notebook 01. <br> 
 Here are a few examples of the MRI scans:
 
-![Sample 1]('./images/Tr-no_0020.jpg')
+![Sample 1](https://github.com/premDelaprem/MRI-tumor-classification/blob/main/images/Tr-no_0020.jpg)
 
-![Sample 2]('./images/Tr-pi_0023.jpg')
+![Sample 2](https://github.com/premDelaprem/MRI-tumor-classification/blob/main/images/Tr-pi_0023.jpg)
 
 
