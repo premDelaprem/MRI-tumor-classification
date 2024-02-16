@@ -14,4 +14,20 @@ Here are a few examples of the MRI scans:
 
 ![Sample 2](https://github.com/premDelaprem/MRI-tumor-classification/blob/main/images/Tr-pi_0023.jpg)
 
+# Summarizing Findings
+Of the 3 models, the Xception pretrained model with a couple of Dropout layers to counter overfitting, performed the best. It achived 95% overall accuracy, and precision and recall scores as high as 99%. Perhaps the biggest limitation of the Xception model was in predicting "glioma", since the precision score for this class alone dropped to 86%. However, its overall performance is very promising and lends credence to the fact that a more advanced model that is further trained with parameters more suitable for MRI image, could perform exceptionally well. 
+![Confusion Matrix - Xception Model](https://github.com/premDelaprem/MRI-tumor-classification/blob/main/graphs/cm_model2.jpeg)
+The "y-axis" here is cutoff, but it represents the **actual** class. <br>
+For more detailed analysis, please refer to my discussion in Notebook 02.
 
+# Recommendations
+As mentioned previously, CNN models can be extremely useful in aiding physcians and medical professionals make diagnoses in almost all fields in healthcare. Due to my personal hardware and time limitations, I was only able to train simple models. However, training an advanced model and feeding it stronger parameters, potentially some non-image data on patient demographics, may greatly improve predictive power to near human-intelligence like levels.
+
+# Sources
+Some of the inspiration and coding ideas I drew originated from the following:
+1. https://www.frontiersin.org/articles/10.3389/fnhum.2023.1150120/full
+2. https://www.evidentlyai.com/classification-metrics/multi-class-metrics
+3. https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset/data
+4. https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-023-02114-6#availability-of-data-and-materials
+
+I also utilized Google Colab's A100 GPU to run all 3 of my CNN models.
