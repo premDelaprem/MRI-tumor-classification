@@ -1,4 +1,7 @@
 # Overview
+
+**Please view my streamlit app demo video on [YouTube](https://youtu.be/C4ocwejHYCs)!**
+
 The contents of this repo are designed to build and train a Convolutional Neural Network model using image data of MRI brain scans. The goal is to be able to accurately classify the type of tumor, or lack thereof, associated with the image in the testing dataset. The data has been gathered by a Kaggle user, and published for public use from [this Kaggle page](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset/data). I begin by analyzing and preprocessing my image data across all 4 clases (glioma, meningioma, pituitary, and notumor). Due to hardware limitations, I build models in Google Colab using their A100 GPU to train all 3 of my basic models. After evaluating the models, I set aside the best performing (*Xception*) model and generate predictions based on testing data. The model, though simplistic, achieved an accuracy of 95%, along with precision and recall as high as 99% for 3 of the 4 classes. Additionally, I've created a streamlit web app to deploy my model that is currently still in development.
 
 # Problem Statement
